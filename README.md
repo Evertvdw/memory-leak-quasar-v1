@@ -13,10 +13,10 @@ The server will now run at `localhost:9000`. You can fire off 100 request in seq
 ## Packages used in this repo
 
 - quasar - 2.14.6
-- @quasar/app-vite - 2.0.0-beta.4
+- @quasar/app-vite - 1.7.4
 - vue - 3.4.21
 - vue-router - 4.3.0
-- vite - 5.1.5
+- vite - 2.9.17
 - @intlify/unplugin-vue-i18n - 2.0.0
 - vue-i18n - 9.10.1
 
