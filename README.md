@@ -1,41 +1,23 @@
 # Quasar App (memory-leak-test-v1)
 
-A Quasar Project
+A demo project to demonstrate no memory leak when using `vue-i18n` compared to [memory-leak-quasar-v2](https://github.com/Evertvdw/memory-leak-quasar-v2).
 
-## Install the dependencies
-```bash
-yarn
-# or
-npm install
-```
+## Reproduction
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+1. Install the dependencies `yarn install`
+2. Build the project `yarn run build`
+3. Run the project `yarn run start`
 
+The server will now run at `localhost:9000`. You can fire off 100 request in sequence by running `yarn run load`. The server will log the initial and current memory usage on every request.
 
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
+## Packages used in this repo
 
+- quasar - 2.14.6
+- @quasar/app-vite - 2.0.0-beta.4
+- vue - 3.4.21
+- vue-router - 4.3.0
+- vite - 5.1.5
+- @intlify/unplugin-vue-i18n - 2.0.0
+- vue-i18n - 9.10.1
 
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
-
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+I ran this test myself using node version 18.17.0 on Windows 11.
